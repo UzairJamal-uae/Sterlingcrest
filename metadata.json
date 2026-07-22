@@ -1,0 +1,6 @@
+{
+  "name": "Sterlingcrest Logistics",
+  "description": "STERLINGCREST LOGISTICS LLC - Elite Freight Brokerage and Logistics Solutions",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
