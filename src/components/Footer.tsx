@@ -110,8 +110,8 @@ export default function Footer({ onNavigate }: FooterProps) {
           <div className="lg:col-span-2 space-y-4">
             <h4 className="text-xs font-bold uppercase tracking-widest text-gray-400">Compliance Info</h4>
             <div className="text-xs text-gray-400 space-y-1.5 leading-normal">
-              <p><strong>FMCSA MC:</strong> #123456</p>
-              <p><strong>USDOT:</strong> #3456789</p>
+              <p><strong>FMCSA MC:</strong> #69863573</p>
+              <p><strong>USDOT:</strong> #6924869</p>
               <p><strong>BOND:</strong> $75,000 BMC-84</p>
               <p className="pt-2">Licensed property broker under FMCSA authority.</p>
             </div>

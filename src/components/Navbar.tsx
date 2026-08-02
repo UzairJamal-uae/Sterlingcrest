@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Truck, Phone, MessageSquare } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import sterl from '../assets/images/sterl.png';
 
 interface NavbarProps {
   onNavigate: (sectionId: string) => void;
@@ -52,7 +53,7 @@ export default function Navbar({ onNavigate }: NavbarProps) {
             id="nav-logo"
           >
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-black text-white shadow-md transition-transform group-hover:scale-105 duration-300">
-              <Truck className="h-5 w-5 stroke-[1.75]" />
+              <img src={sterl} alt="S" />
             </div>
             <div>
               <span className="block text-sm md:text-base font-extrabold tracking-wider text-black font-sans uppercase">

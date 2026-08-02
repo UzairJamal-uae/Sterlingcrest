@@ -58,7 +58,7 @@ export default function WhyChooseUs() {
               </h2>
               <div className="h-1.5 w-20 bg-black rounded-full" />
               <p className="text-gray-600 text-sm sm:text-base max-w-xl leading-relaxed">
-                At Sterlingcrest Logistics LLC, we go beyond traditional freight brokerage. Our relentless commitment to excellence, technological precision, and absolute transparency separates us from the rest.
+                At SterlingCrest Logistics LLC, we go beyond traditional freight brokerage. Our relentless commitment to excellence, technological precision, and absolute transparency separates us from the rest.
               </p>
             </div>
 

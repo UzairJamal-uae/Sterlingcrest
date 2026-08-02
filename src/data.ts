@@ -30,13 +30,6 @@ export const SERVICES_DATA: ServiceItem[] = [
     highlights: ['Flexible load times', 'Optimized dock scheduling', 'No detention charges', 'Consistent asset availability']
   },
   {
-    id: 'warehousing',
-    title: 'Warehousing & Cross-Docking',
-    description: 'Secure, temperature-regulated facilities with full inventory visibility. Fast cross-docking to keep high-velocity inventory moving.',
-    iconName: 'Warehouse',
-    highlights: ['WMS system integration', 'Cross-dock speed-loading', 'Short & long-term storage', 'Strict inventory control']
-  },
-  {
     id: 'hazmat',
     title: 'Specialized & Hazmat',
     description: 'Expert dispatching for dangerous goods, temperature-sensitive refrigerated loads, and over-dimensional heavy haul projects.',
