@@ -30,11 +30,11 @@ export const SERVICES_DATA: ServiceItem[] = [
     highlights: ['Flexible load times', 'Optimized dock scheduling', 'No detention charges', 'Consistent asset availability']
   },
   {
-    id: 'hazmat',
-    title: 'Specialized & Hazmat',
-    description: 'Expert dispatching for dangerous goods, temperature-sensitive refrigerated loads, and over-dimensional heavy haul projects.',
-    iconName: 'ShieldAlert',
-    highlights: ['Fully certified Hazmat carriers', 'Reefer temperature telemetry', 'Permits & escorts coordination', '100% DOT compliance']
+    id: 'Expedited Shipping',
+    title: 'Expedited Shipping',
+    description: 'Time-critical delivery services for urgent shipments. When your cargo needs to be there fast, we prioritize speed without sacrificing safety.',
+    iconName: 'Electricity',
+    highlights: ['Fully certified carriers', 'Reefer temperature telemetry', 'Escorts coordination', '100% DOT compliance']
   }
 ];
 
@@ -42,7 +42,7 @@ export const FAQ_DATA: FAQItem[] = [
   {
     id: 'q1',
     category: 'shipper',
-    question: 'How does Sterlingcrest Logistics vet its carrier network?',
+    question: 'How does SterlingCrest Logistics vet its carrier network?',
     answer: 'We enforce a rigorous multi-stage vetting process. Every carrier in our network is verified daily through leading compliance databases for active FMCSA authority, clean safety records (SMS scores), valid insurance coverage (minimum $1M Auto Liability and $100k Cargo Insurance), and robust safety ratings. We do not work with double-brokered carriers or those with high CSA infraction counts.'
   },
   {

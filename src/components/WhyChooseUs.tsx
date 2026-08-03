@@ -9,7 +9,7 @@ export default function WhyChooseUs() {
   const keyPoints = [
     {
       title: 'Trusted Partnerships & Compliance',
-      description: 'At Sterlingcrest, we treat every load with absolute integrity. We maintain rigorous standards, continuous compliance monitoring, and daily verification of carrier credentials to eliminate double brokerage and ensure strict risk mitigation.',
+      description: 'At SterlingCrest, we treat every load with absolute integrity. We maintain rigorous standards, continuous compliance monitoring, and daily verification of carrier credentials to eliminate double brokerage and ensure strict risk mitigation.',
       icon: Handshake
     },
     {
@@ -51,7 +51,7 @@ export default function WhyChooseUs() {
           >
             <div className="space-y-4">
               <span className="text-xs font-bold uppercase tracking-widest text-zinc-600">
-                The Sterlingcrest Advantage
+                The SterlingCrest Advantage
               </span>
               <h2 className="text-4xl md:text-6xl font-display font-[900] tracking-tight text-black uppercase" id="why-choose-us-title">
                 WHY CHOOSE <span className="text-gray-500 font-[900]">US</span>

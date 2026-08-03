@@ -19,7 +19,7 @@ export default function Hero({ onNavigate }: HeroProps) {
       <div className="absolute inset-0 z-0">
         <img
           src="/src/assets/images/sterlingcrest_truck_right_to_left_1784321367948.jpg"
-          alt="Sterlingcrest Logistics Premium Fleet"
+          alt="SterlingCrest Logistics Premium Fleet"
           className="w-full h-full object-cover object-right lg:object-center opacity-75"
           referrerPolicy="no-referrer"
         />

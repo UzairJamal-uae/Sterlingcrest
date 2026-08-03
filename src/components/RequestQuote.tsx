@@ -296,7 +296,7 @@ export default function RequestQuote() {
                       required
                     />
                     <label htmlFor="quote-terms-checkbox" className="text-[11px] text-gray-500 select-none cursor-pointer leading-relaxed">
-                      By checking this box, you agree to receive spot-quote notifications, transit schedules, and phone consultations from Sterlingcrest Logistics. I acknowledge the company&apos;s <span className="underline">Privacy Policy</span>.
+                      By checking this box, you agree to receive spot-quote notifications, transit schedules, and phone consultations from SterlingCrest Logistics. I acknowledge the company&apos;s <span className="underline">Privacy Policy</span>.
                     </label>
                   </div>
 

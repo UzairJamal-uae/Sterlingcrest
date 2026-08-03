@@ -57,7 +57,7 @@ export default function Navbar({ onNavigate }: NavbarProps) {
             </div>
             <div>
               <span className="block text-sm md:text-base font-extrabold tracking-wider text-black font-sans uppercase">
-                Sterlingcrest
+                SterlingCrest
               </span>
               <span className="block text-[9px] md:text-[10px] font-semibold tracking-widest text-gray-500 font-sans uppercase">
                 Logistics LLC
