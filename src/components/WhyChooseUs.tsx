@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ChevronDown, Handshake, ShieldCheck, FileCheck, CircleDollarSign, Check } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-const warehouseImage = "/src/assets/images/sterlingcrest_warehouse_1784317963002.jpg";
+import warehouse from '../assets/images/warehouse.jpg';
 
 export default function WhyChooseUs() {
   const [activeAccordion, setActiveAccordion] = useState<number | null>(0);
@@ -128,7 +128,7 @@ export default function WhyChooseUs() {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-gray-100 aspect-[3/4]">
               <img
-                src={warehouseImage}
+                src={warehouse}
                 alt="Modern automated logistics hub"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
