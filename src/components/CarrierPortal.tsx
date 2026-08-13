@@ -37,7 +37,7 @@ export default function CarrierPortal() {
     },
     {
       title: 'Quick Dispatch Support',
-      description: 'Never feel stranded. Speak with our highly experienced logistics dispatch coordinators at any hour of the day or night.',
+      description: 'Never feel stranded. Speak with our highly experienced logistics dispatch coordinators.',
       icon: Headphones
     }
   ];
@@ -347,7 +347,7 @@ export default function CarrierPortal() {
                     </div>
 
                     <div className="p-5 bg-white/5 rounded-2xl border border-white/10 text-left max-w-sm mx-auto text-xs space-y-2">
-                      <p className="text-gray-400"><strong>DOT Verification status:</strong> Pending (Automated check takes ~15 min)</p>
+                      <p className="text-gray-400"><strong>DOT Verification status:</strong> Pending (Automated check takes ~30 min)</p>
                       <p className="text-gray-400"><strong>Lane matching coordinator:</strong> Assigned</p>
                       <p className="text-gray-400"><strong>Registered Dispatch email:</strong> {submittedData.email}</p>
                     </div>

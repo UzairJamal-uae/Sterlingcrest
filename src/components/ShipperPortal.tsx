@@ -5,7 +5,7 @@ export default function ShipperPortal() {
   const shipperPerks = [
     {
       title: 'Cargo Security & Integrity',
-      description: 'Advanced security protocols and vetted carrier network for high-value shipments, dry vans, flatbeds, and hazmat loads.',
+      description: 'Advanced security protocols and vetted carrier network for high-value shipments, dry vans, flatbeds, and General Freights.',
       icon: ShieldCheck
     },
     {

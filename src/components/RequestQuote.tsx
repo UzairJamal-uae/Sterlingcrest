@@ -109,7 +109,7 @@ export default function RequestQuote() {
               </h2>
               <div className="h-1.5 w-20 bg-black rounded-full" />
               <p className="text-gray-600 text-sm sm:text-base leading-relaxed font-sans">
-                Receive a rapid, obligation-free lane quote customized for your transit. Fill out the logistics requirements below, and our spot rate operators will contact you in under 15 minutes with exact truck availability.
+                Receive a rapid, obligation-free lane quote customized for your transit. Fill out the logistics requirements below, and our spot rate operators will contact you in under 30 minutes with exact truck availability.
               </p>
             </div>
 
@@ -250,7 +250,6 @@ export default function RequestQuote() {
                         <option value="flatbed">Flatbed / Step Deck</option>
                         <option value="ltl">Less Than Truckload (LTL)</option>
                         <option value="partial">Partial Load</option>
-                        <option value="hazmat">Hazardous Materials (Hazmat)</option>
                       </select>
                     </div>
 

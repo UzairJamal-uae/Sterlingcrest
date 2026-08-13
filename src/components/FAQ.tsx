@@ -143,7 +143,7 @@ export default function FAQ() {
           <div className="space-y-1">
             <p className="text-sm font-extrabold text-black">Still have queries?</p>
             <p className="text-xs text-gray-500 max-w-sm mx-auto">
-              Our support dispatch and compliance officers are available 24/7/365 to answer any operational questions.
+              Our support dispatch and compliance officers are available during working hours to answer any operational questions instantly.
             </p>
           </div>
           <div className="pt-2">

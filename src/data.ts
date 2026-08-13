@@ -49,7 +49,7 @@ export const FAQ_DATA: FAQItem[] = [
     id: 'q2',
     category: 'shipper',
     question: 'How do you guarantee freight tracking and security?',
-    answer: 'We utilize advanced ELD integrations and tracking software. Once a load is dispatched, Shippers receive real-time location updates via GPS, automated geo-fencing alerts upon arrival/departure, and digital Proof of Delivery (POD) directly to their email. For high-value loads, we assign dedicated tracking teams who monitor transits 24/7/365.'
+    answer: 'We utilize advanced ELD integrations and tracking software. Once a load is dispatched, Shippers receive real-time location updates via GPS, automated geo-fencing alerts upon arrival/departure, and digital Proof of Delivery (POD) directly to their email. For high-value loads, we assign dedicated tracking teams who monitor all of transits.'
   },
   {
     id: 'q3',

@@ -30,7 +30,7 @@ export default function WhyChooseUs() {
   ];
 
   const benefitsList = [
-    '24/7/365 Dedicated Dispatch Assistance',
+    'Dedicated Dispatch Assistance',
     'Integrated ELD Tracking and Automated Alerts',
     'Strict Double-Brokerage Defense Systems',
     'Customized KPI Reporting & Fuel Surcharges'
