@@ -36,7 +36,7 @@ export default function CarrierPortal() {
       icon: CalendarDays
     },
     {
-      title: '24/7 Human Dispatch Support',
+      title: 'Quick Dispatch Support',
       description: 'Never feel stranded. Speak with our highly experienced logistics dispatch coordinators at any hour of the day or night.',
       icon: Headphones
     }

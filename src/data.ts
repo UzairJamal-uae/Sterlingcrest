@@ -13,7 +13,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     title: 'Less Than Truckload (LTL)',
     description: 'Cost-efficient transport for shipments that do not require a full 53-foot trailer. We optimize routing and pricing through elite tier relationships.',
     iconName: 'Boxes',
-    highlights: ['Consolidated pricing', 'Nationwide hub coverage', 'Liftgate services available', 'Class-based auditing']
+    highlights: ['Consolidated pricing', 'Liftgate services available', 'Class-based auditing']
   },
   {
     id: 'partials',
@@ -34,7 +34,7 @@ export const SERVICES_DATA: ServiceItem[] = [
     title: 'Expedited Shipping',
     description: 'Time-critical delivery services for urgent shipments. When your cargo needs to be there fast, we prioritize speed without sacrificing safety.',
     iconName: 'Electricity',
-    highlights: ['Fully certified carriers', 'Reefer temperature telemetry', 'Escorts coordination', '100% DOT compliance']
+    highlights: ['Fully certified carriers', 'Reefer temperature telemetry', '100% DOT compliance']
   }
 ];
 

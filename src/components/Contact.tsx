@@ -29,8 +29,8 @@ export default function Contact() {
     },
     {
       label: 'HOURS',
-      value: '24/7/365 Operations',
-      subtext: 'Always online, always available',
+      value: 'Monday - Friday, 6:00 AM - 6:00 PM EST',
+      subtext: 'After-hours support: available for active, in-transit loads only',
       icon: Clock,
       actionText: 'Check Status',
       href: '#home'

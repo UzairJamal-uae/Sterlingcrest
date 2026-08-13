@@ -15,7 +15,7 @@ export default function ShipperPortal() {
     },
     {
       title: 'Dedicated Account Manager',
-      description: 'Personalized 24/7 service with a dedicated logistics professional who understands your business needs.',
+      description: 'Personalized service with a dedicated logistics professional who understands your business needs.',
       icon: UserCheck
     },
     {

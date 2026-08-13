@@ -60,11 +60,11 @@ export default function AboutUs() {
                 <p className="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider mt-1 font-sans">FMCSA Compliant</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl font-extrabold text-black font-display">24/7</p>
-                <p className="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider mt-1 font-sans">Human Dispatch</p>
+                <p className="text-2xl sm:text-3xl font-extrabold text-black font-display">99.4%</p>
+                <p className="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider mt-1 font-sans">On-Time Delivery</p>
               </div>
               <div>
-                <p className="text-2xl sm:text-3xl font-extrabold text-black font-display">$2M+</p>
+                <p className="text-2xl sm:text-3xl font-extrabold text-black font-display">$100K+</p>
                 <p className="text-[10px] sm:text-xs font-bold text-gray-500 uppercase tracking-wider mt-1 font-sans">Liability Policy</p>
               </div>
             </div>

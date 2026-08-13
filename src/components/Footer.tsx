@@ -57,7 +57,9 @@ export default function Footer({ onNavigate }: FooterProps) {
               </div>
             </button>
             <p className="text-xs text-gray-400 leading-relaxed max-w-sm">
-              Elite freight management with the absolute integrity and security your supply chain demands. Bridging premium carrier networks and shippers nationwide with 24/7 responsiveness.
+              At the Crest of Logistics Performance.
+              <br />
+              Bridging premium carrier networks and shippers nationwide with 24/7 responsiveness.
             </p>
             {/* Social Icons */}
             <div className="flex gap-3">

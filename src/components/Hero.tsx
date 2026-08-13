@@ -10,7 +10,7 @@ export default function Hero({ onNavigate }: HeroProps) {
     { label: 'On-Time Delivery', value: '99.4%', icon: Clock },
     { label: 'Vetted Carriers', value: '45K+', icon: ShieldCheck },
     { label: 'Active Coverage', value: '50 States', icon: Globe },
-    { label: 'Dispatch Response', value: '< 15 Min', icon: Award },
+    { label: 'Dispatch Response', value: '< 30 Min', icon: Award },
   ];
 
   return (
@@ -65,8 +65,9 @@ export default function Hero({ onNavigate }: HeroProps) {
                 className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl leading-relaxed font-sans"
                 id="hero-description"
               >
-                Elite freight management with the absolute integrity and security your supply chain demands. 
-                We bridge shippers and premium carrier networks with absolute transparency and 24/7 accountability.
+                At the Crest of Logistics Performance.
+                <br />
+                We bridge shippers and premium carrier networks with absolute transparency and fast accountability.
               </motion.p>
             </div>
 
