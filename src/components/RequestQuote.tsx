@@ -50,27 +50,73 @@ export default function RequestQuote() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setErrorMessage('');
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setErrorMessage('');
 
-    if (!formData.companyName || !formData.contactName || !formData.email || !formData.phone || !formData.origin || !formData.destination || !formData.freightType) {
-      setErrorMessage('Please complete all required fields (*).');
-      return;
-    }
+  if (
+    !formData.companyName ||
+    !formData.contactName ||
+    !formData.email ||
+    !formData.phone ||
+    !formData.origin ||
+    !formData.destination ||
+    !formData.freightType
+  ) {
+    setErrorMessage('Please complete all required fields (*).');
+    return;
+  }
 
-    if (!agreedTerms) {
-      setErrorMessage('You must agree to the privacy terms to request an instant quote.');
-      return;
-    }
+  if (!agreedTerms) {
+    setErrorMessage(
+      'You must agree to the privacy terms to request an instant quote.'
+    );
+    return;
+  }
 
-    setIsSubmitting(true);
+  setIsSubmitting(true);
 
-    // Simulate database write
-    setTimeout(() => {
-      setIsSubmitting(false);
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        access_key: '64172274-49a8-4562-a3ce-5e2f42a48116',
+
+        subject: 'New Quote Request - SterlingCrest Logistics',
+
+        from_name: 'SterlingCrest Logistics Website',
+
+        companyName: formData.companyName,
+        contactName: formData.contactName,
+        email: formData.email,
+        phone: formData.phone,
+        origin: formData.origin,
+        destination: formData.destination,
+        freightType: formData.freightType,
+        weight: formData.weight,
+        details: formData.details,
+
+        routeDistance: routeDistance
+          ? `${routeDistance} miles`
+          : 'Not calculated',
+
+        estimatedCost: estimatedCost
+          ? `$${Math.round(estimatedCost * 0.93)} - $${Math.round(
+              estimatedCost * 1.07
+            )}`
+          : 'Not calculated',
+      }),
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
       setSubmittedQuote({ ...formData });
-      // Reset
+
       setFormData({
         companyName: '',
         contactName: '',
@@ -80,11 +126,25 @@ export default function RequestQuote() {
         destination: '',
         freightType: '',
         weight: '',
-        details: ''
+        details: '',
       });
+
       setAgreedTerms(false);
-    }, 1200);
-  };
+    } else {
+      setErrorMessage(
+        result.message || 'Something went wrong. Please try again.'
+      );
+    }
+  } catch (error) {
+    console.error('Quote form error:', error);
+
+    setErrorMessage(
+      'Unable to submit your request. Please check your internet connection and try again.'
+    );
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <section id="quote" className="py-20 md:py-28 bg-white border-b border-gray-100 overflow-hidden">

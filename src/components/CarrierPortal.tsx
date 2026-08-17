@@ -47,28 +47,62 @@ export default function CarrierPortal() {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setErrorMessage('');
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setErrorMessage('');
 
-    // Validation
-    if (!formData.legalName || !formData.mcNumber || !formData.dotNumber || !formData.email || !formData.phone || !formData.equipmentType) {
-      setErrorMessage('Please complete all required fields (*).');
-      return;
-    }
+  if (
+    !formData.legalName ||
+    !formData.mcNumber ||
+    !formData.dotNumber ||
+    !formData.email ||
+    !formData.phone ||
+    !formData.equipmentType
+  ) {
+    setErrorMessage('Please complete all required fields (*).');
+    return;
+  }
 
-    if (!hasInsurance) {
-      setErrorMessage('You must confirm cargo and liability insurance requirements to register.');
-      return;
-    }
+  if (!hasInsurance) {
+    setErrorMessage(
+      'You must confirm cargo and liability insurance requirements to register.'
+    );
+    return;
+  }
 
-    setIsSubmitting(true);
+  setIsSubmitting(true);
 
-    // Simulate database write
-    setTimeout(() => {
-      setIsSubmitting(false);
+  try {
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Accept: 'application/json',
+      },
+      body: JSON.stringify({
+        access_key: '64172274-49a8-4562-a3ce-5e2f42a48116',
+
+        subject: 'New Carrier Application - SterlingCrest Logistics',
+
+        from_name: 'SterlingCrest Logistics Website',
+
+        legalName: formData.legalName,
+        mcNumber: formData.mcNumber,
+        dotNumber: formData.dotNumber,
+        email: formData.email,
+        phone: formData.phone,
+        equipmentType: formData.equipmentType,
+        additionalInfo: formData.additionalInfo,
+
+        insuranceConfirmed: 'Yes',
+      }),
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
       setSubmittedData({ ...formData });
-      // Reset form
+
       setFormData({
         legalName: '',
         mcNumber: '',
@@ -76,11 +110,25 @@ export default function CarrierPortal() {
         email: '',
         phone: '',
         equipmentType: '',
-        additionalInfo: ''
+        additionalInfo: '',
       });
+
       setHasInsurance(false);
-    }, 1200);
-  };
+    } else {
+      setErrorMessage(
+        result.message || 'Something went wrong. Please try again.'
+      );
+    }
+  } catch (error) {
+    console.error('Carrier application error:', error);
+
+    setErrorMessage(
+      'Unable to submit your application. Please check your internet connection and try again.'
+    );
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <section id="carrier-portal" className="py-20 md:py-28 bg-gradient-to-b from-neutral-900 to-neutral-950 border-b border-neutral-800 text-white overflow-hidden">
